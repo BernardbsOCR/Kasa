@@ -1,7 +1,9 @@
 import React from 'react'
 
-function FicheLogement() {
-    return <div>FicheLogement</div>
+function FicheLogement({ updateNavLink }) {
+  updateNavLink('FicheLogement')
+
+  return <div>FicheLogement</div>
 }
 
-export default FicheLogement;
+export default FicheLogement

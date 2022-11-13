@@ -1,7 +1,9 @@
 import React from 'react'
 
-function APropos() {
-    return <div>APropos</div>
+function APropos({ updateNavLink }) {
+  updateNavLink('APropos')
+
+  return <div>APropos</div>
 }
 
-export default APropos;
+export default APropos

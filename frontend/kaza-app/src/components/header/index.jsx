@@ -1,7 +1,39 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import styles from '../../styles/Header.module.css'
+import Logo from '../../assets/logo_kaza.svg'
 
-function Header() {
-    return <div>Header</div>
+function Header({ navLink }) {
+  return (
+    <header className={styles}>
+      <picture>
+        <img src={Logo} alt="kaza-logo" />
+      </picture>
+      <nav>
+        <Link
+          to="/"
+          className={styles.headerLink}
+          style={getTextDecoration(navLink, 'Home')}
+        >
+          Accueil
+        </Link>
+        <Link
+          to="/a-propos"
+          className={styles.headerLink}
+          style={getTextDecoration(navLink, 'APropos')}
+        >
+          A Propos
+        </Link>
+      </nav>
+    </header>
+  )
 }
 
-export default Header;
+function getTextDecoration(navLink, linkName) {
+  const underline = navLink === linkName ? 'underline' : 'none'
+  return {
+    textDecoration: `${underline}`,
+  }
+}
+
+export default Header

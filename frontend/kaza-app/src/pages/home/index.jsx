@@ -1,7 +1,9 @@
 import React from 'react'
 
-function Home() {
-    return <div>Home page</div>
+function Home({ updateNavLink }) {
+  updateNavLink('Home')
+
+  return <div>Home page</div>
 }
 
-export default Home;
+export default Home
