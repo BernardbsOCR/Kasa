@@ -1,8 +1,9 @@
 header {
+    flex: 1;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    width: auto;
 }
 
 header picture {
@@ -25,6 +26,10 @@ header .navLink {
 }
 
 @media (max-width: 768px) {
+    header {
+        margin: 20px 20px 0 20px;
+    }
+
     header img {
         width: 145px;
         height: 47px;
@@ -41,6 +46,10 @@ header .navLink {
 }
 
 @media (min-width: 769px) {
+    header {
+        margin: 40px 40px 0 40px;
+    }
+
     header img {
         width: 210.32px;
         height: 68px;

@@ -1,17 +1,14 @@
 .rootLayout {
     display: flex;
     flex-direction: column;
-    width: auto;
-    max-width: 1240px;
+    width: 100v;
+    max-width: 1320px;
     min-width: 375px;
-    height: 100vh;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px 20px 0px 20px;
+    margin: 0 auto 0px auto;
 }
 
 @media (max-width: 768px) {
-
+    
 }
 
 @media (min-width: 769px) {

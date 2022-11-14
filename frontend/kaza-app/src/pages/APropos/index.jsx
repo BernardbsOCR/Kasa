@@ -6,7 +6,7 @@ function APropos({ updateNavLink }) {
   updateNavLink('APropos')
 
   return (
-    <div>
+    <div className={styles.aPropos}>
       <Banner />A Propos
     </div>
   )

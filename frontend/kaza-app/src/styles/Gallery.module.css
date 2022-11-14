@@ -1,0 +1,25 @@
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 50px;
+    justify-content: space-around;
+    background: #F7F7F7;
+    border-radius: 25px;
+    padding: 50px;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        padding: 20px;
+        row-gap: 20px;
+    }
+}
+
+@media (min-width: 769px) {
+    .gallery {
+        padding: 50px;
+        row-gap: 50px;
+    }
+}
