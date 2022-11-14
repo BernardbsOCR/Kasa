@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { useState } from 'react'
 import './index.css'
-import RootLayout from './pages/root-layout'
-import Main from './pages/main'
-import Home from './pages/home'
-import FicheLogement from './pages/fiche-logement'
-import APropos from './pages/a-propos'
-import Error404 from './pages/error404'
-import Header from './components/header'
-import Footer from './components/footer'
+import RootLayout from './pages/RootLayout'
+import Body from './pages/Body'
+import Home from './pages/Home'
+import FicheLogement from './pages/FicheLogement'
+import APropos from './pages/APropos'
+import Error404 from './pages/Error404'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
@@ -20,7 +20,7 @@ function Root() {
   return (
     <RootLayout>
       <Header navLink={navLink} />
-      <Main>
+      <Body>
         <Routes>
           <Route
             exact
@@ -40,7 +40,7 @@ function Root() {
             element={<Error404 updateNavLink={updateNavLink} />}
           />
         </Routes>
-      </Main>
+      </Body>
       <Footer />
     </RootLayout>
   )

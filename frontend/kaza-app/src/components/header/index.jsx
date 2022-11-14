@@ -12,14 +12,14 @@ function Header({ navLink }) {
       <nav>
         <Link
           to="/"
-          className={styles.headerLink}
+          className={styles.navLink}
           style={getTextDecoration(navLink, 'Home')}
         >
           Accueil
         </Link>
         <Link
           to="/a-propos"
-          className={styles.headerLink}
+          className={styles.navLink}
           style={getTextDecoration(navLink, 'APropos')}
         >
           A Propos

@@ -1,0 +1,9 @@
+.home {    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+}
+
+
