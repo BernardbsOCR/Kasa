@@ -1,8 +1,5 @@
 .thumb {
-    position: relative;
-    width: 340px;
-    height: 340px;
-    
+    position: relative;    
     border-radius: 10px;
 }
 
@@ -51,12 +48,24 @@
         height: auto;
         min-height: 255px;
     }
+
+    .thumb .rectangle {
+        height: 99%;
+        min-height: 255px;
+    }
+
+    .thumb img {
+        min-height: 255px;
+    }
 }
 
 @media (min-width: 769px) {
     .thumb {
         width: 340px;
         height: 340px;
-        min-height: 340px;
+    }
+
+    .thumb .rectangle {
+        height: 100%;
     }
 }

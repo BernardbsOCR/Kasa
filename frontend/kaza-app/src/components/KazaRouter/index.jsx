@@ -25,7 +25,7 @@ function KazaRouter() {
               element={<Home updateNavLink={updateNavLink} />}
             />
             <Route
-              path="/fiche-logement"
+              path="/fiche-logement/:id"
               element={<FicheLogement updateNavLink={updateNavLink} />}
             />
             <Route
