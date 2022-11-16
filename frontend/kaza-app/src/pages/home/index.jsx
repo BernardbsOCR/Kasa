@@ -4,6 +4,7 @@ import Banner from '../../components/Banner'
 import Gallery from '../../components/Gallery'
 import styles from '../../styles/Home.module.css'
 import kazaApi from '../../api/kazaApi'
+import stylesBanner from '../../styles/Banner.module.css'
 
 import BackgroungDesktop from '../../assets/eric-muhr-P_XxsdVgtpQ-unsplash_descktop.jpg'
 import BackgroungMobile from '../../assets/eric-muhr-P_XxsdVgtpQ-unsplash_mobile.jpg'
@@ -45,7 +46,12 @@ function Home({ updateNavLink }) {
 
   return (
     <div className={styles.home}>
-      <Banner images={imagesBanner} titles={titlesBanner} />
+      <Banner
+        key={'HomeBanner'}
+        images={imagesBanner}
+        titles={titlesBanner}
+        styles={stylesBanner}
+      />
       <Gallery announcements={announcements} />
     </div>
   )

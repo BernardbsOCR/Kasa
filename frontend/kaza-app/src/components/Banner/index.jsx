@@ -1,7 +1,7 @@
 import React from 'react'
-import styles from '../../styles/BannerHome.module.css'
+import stylesDefault from '../../styles/Banner.module.css'
 
-function Banner({ images, titles = '' }) {
+function Banner({ images, titles = '', styles = stylesDefault }) {
   return (
     <div className={styles.banner}>
       <picture>
