@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import Banner from '../../components/BannerHome'
 import Gallery from '../../components/Gallery'
 import styles from '../../styles/Home.module.css'
-import loadAnnouncements from '../../api/kazaApi'
+import kazaApi from '../../api/kazaApi'
 
 function Home({ updateNavLink }) {
   updateNavLink('Home')
@@ -15,7 +15,7 @@ function Home({ updateNavLink }) {
   }, [])
 
   function getAnnouncements() {
-    Promise.resolve(loadAnnouncements())
+    Promise.resolve(kazaApi.getAll())
       .then((data) => {
         updateAnnouncement(data)
       })

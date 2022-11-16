@@ -5,7 +5,7 @@ import dropdownClose from '../../assets/dropdown-close.svg'
 import dropdownOpen from '../../assets/dropdown-open.svg'
 
 function Collapse({ title, description }) {
-  const [isOpen, updateIsOpen] = useState(title === 'Service' ? true : false)
+  const [isOpen, updateIsOpen] = useState(false)
 
   return (
     <div className={styles.collapse}>

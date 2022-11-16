@@ -1,6 +1,6 @@
 .aPropos {
     width: auto;
-    height: auto;
+    
     position: relative;
     display: flex;
     flex-direction: column;
@@ -8,12 +8,14 @@
 
 @media (max-width: 768px) {
     .aPropos {
+        min-height: calc(100vh - 334px);
         margin: 0 20px 20px 20px;
     }
 }
 
 @media (min-width: 769px) {
     .aPropos {
+        min-height: calc(100vh - 386px);
         margin: 0 40px 40px 40px;
     }
 }

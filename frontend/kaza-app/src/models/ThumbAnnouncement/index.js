@@ -16,6 +16,7 @@ export class ThumbAnnouncement {
     this.cover = cover
     this.pictures = pictures
     this.description = description
+    this.host = host
     this.rating = rating
     this.location = location
     this.equipments = equipments
