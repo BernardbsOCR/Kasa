@@ -15,7 +15,6 @@
 .bannerTitleMobile {    
     position: absolute;
     top: 50%;
-    margin-right: -50%;
     transform: translate(-50%, -50%);    
     font-weight: 500;
     font-size: 24px;
@@ -36,6 +35,7 @@
 
 .banner img {
     width: 100%;
+    height: 100%;
     object-fit: cover;    
     overflow: hidden;
 }
@@ -67,6 +67,7 @@
 
 @media (min-width: 769px) {
     .banner {
+        height: 223px;
         margin-top: 40px;
         margin-bottom: 40px;
     }
@@ -83,12 +84,10 @@
     }
 
     .background {
-        height: 223px;
         border-radius: 25px;
     }
 
     .banner img {
         border-radius: 25px;
-        height: 223px;
     }
 }
