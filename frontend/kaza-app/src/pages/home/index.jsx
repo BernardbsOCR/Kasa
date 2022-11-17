@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import Banner from '../../components/Banner'
 import Gallery from '../../components/Gallery'
 import styles from '../../styles/Home.module.css'
-import kazaApi from '../../api/kazaApi'
+import { getAll } from '../../api/KazaAPI'
 import stylesBanner from '../../styles/Banner.module.css'
 
 import BackgroungDesktop from '../../assets/eric-muhr-P_XxsdVgtpQ-unsplash_descktop.jpg'
@@ -31,18 +31,14 @@ function Home({ updateNavLink }) {
   const [announcements, updateAnnouncement] = useState([])
 
   useEffect(() => {
-    getAnnouncements()
-  }, [])
-
-  function getAnnouncements() {
-    Promise.resolve(kazaApi.getAll())
+    Promise.resolve(getAll())
       .then((data) => {
         updateAnnouncement(data)
       })
       .catch((error) => {
         console.log({ error })
       })
-  }
+  }, [])
 
   return (
     <div className={styles.home}>

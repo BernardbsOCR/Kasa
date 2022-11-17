@@ -10,6 +10,7 @@ body {
   min-height: 100%;
   margin: 0;
   padding: 0;
+
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -37,4 +38,18 @@ code {
 
 h1, h2, p {
   font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  * {
+    --page-min-height: calc(100vh - 334px);
+    --page-margin: 20px;
+  }
+}
+
+@media (min-width: 769px) {
+  * {
+    --page-min-height: calc(100vh - 386px);
+    --page-margin: 40px;
+  }
 }
