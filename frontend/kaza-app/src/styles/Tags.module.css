@@ -1,0 +1,31 @@
+.tags {
+    display: flex; 
+    flex-wrap: wrap;   
+    row-gap: 10px;
+    column-gap: 10px;
+}   
+
+.tags p {
+    background-color: var(--color-primary);
+    margin: 0;
+} 
+
+@media (max-width: 768px) {
+    .tags p {
+        height: 18px;
+        border-radius: 5px;
+        padding: 3px 30px;
+        font-size: 10px;
+        line-height: 14px;
+    }      
+}
+
+@media (min-width: 769px) {
+    .tags p {
+        height: 25px;
+        border-radius: 10px;
+        padding: 3px 40px;
+        font-size: 14px;
+        line-height: 20px;
+    } 
+}

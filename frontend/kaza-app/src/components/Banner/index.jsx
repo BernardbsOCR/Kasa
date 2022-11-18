@@ -1,7 +1,7 @@
 import React from 'react'
 import stylesDefault from '../../styles/Banner.module.css'
 
-function Banner({ images, titles = '', styles = stylesDefault }) {
+function Banner({ images, title = '', styles = stylesDefault }) {
   return (
     <div className={styles.banner}>
       <picture>
@@ -10,12 +10,8 @@ function Banner({ images, titles = '', styles = stylesDefault }) {
         <img src={images.desktop.srcset} alt="Banner-background" />
       </picture>
       <div className={styles.background}></div>
-      {titles !== '' ? (
-        <p className={styles.bannerTitleDesktop}>{titles.desktop}</p>
-      ) : null}
-      {titles !== '' ? (
-        <p className={styles.bannerTitleMobile}>{titles.mobile}</p>
-      ) : null}
+
+      {title !== '' ? <p className={styles.title}>{title}</p> : null}
     </div>
   )
 }

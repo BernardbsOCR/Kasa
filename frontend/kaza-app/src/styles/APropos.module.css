@@ -1,7 +1,11 @@
 .aPropos {
-    width: auto;
-    
+    width: auto;    
     position: relative;
+    display: flex;
+    flex-direction: column;    
+}
+
+.aPropos .section {
     display: flex;
     flex-direction: column;
 }
@@ -12,6 +16,16 @@
         margin: 0 var(--page-margin);
         margin-bottom: var(--page-margin);
     }
+
+    .aPropos .section {
+        margin: 10px 0 20px 0;
+        row-gap: 20px;
+    }
+
+    .aPropos .banner {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 }
 
 @media (min-width: 769px) {
@@ -19,5 +33,15 @@
         min-height: var(--page-min-height);
         margin: 0 var(--page-margin);
         margin-bottom: var(--page-margin);
+    }
+
+    .aPropos .section {
+        margin: 0 100px 20px 100px;
+        row-gap: 30px;
+    }
+
+    .aPropos .banner {
+        margin-top: 40px;
+        margin-bottom: 30px;
     }
 }

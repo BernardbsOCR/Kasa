@@ -12,6 +12,11 @@
         margin: 0 var(--page-margin);
         margin-bottom: var(--page-margin);
     }
+
+    .home .banner {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 }
 
 @media (min-width: 769px) {
@@ -19,5 +24,10 @@
         min-height: var(--page-min-height);
         margin: 0 var(--page-margin);
         margin-bottom: var(--page-margin);
+    }
+
+    .home .banner {
+        margin-top: 40px;
+        margin-bottom: 30px;
     }
 }

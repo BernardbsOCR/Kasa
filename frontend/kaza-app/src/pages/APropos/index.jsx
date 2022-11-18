@@ -3,8 +3,6 @@ import Banner from '../../components/Banner'
 import styles from '../../styles/APropos.module.css'
 import Collapse from '../../components/Collapse'
 import AProposText from '../../datas/text/AProposText'
-import stylesBanner from '../../styles/BannerAPropos.module.css'
-
 import BackgroungDesktop from '../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash_desktop.jpg'
 import BackgroungMobile from '../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash_mobile.jpg'
 
@@ -24,13 +22,11 @@ function APropos({ updateNavLink }) {
 
   return (
     <div className={styles.aPropos}>
-      <Banner
-        key={'AProposBanner'}
-        images={imagesBanner}
-        styles={stylesBanner}
-      />
-      <section>
-        {AProposText.map((data, index) => (
+      <div className={styles.banner}>
+        <Banner images={imagesBanner} />
+      </div>
+      <section className={styles.section}>
+        {AProposText.map((data) => (
           <Collapse title={data.title} description={data.description} />
         ))}
       </section>

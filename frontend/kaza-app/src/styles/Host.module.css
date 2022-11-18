@@ -1,0 +1,41 @@
+.host {
+    display: flex;  
+    height: fit-content; 
+    column-gap: 10px;
+    align-items: center;
+}  
+
+.host .hostPicture {
+    border-radius: 50% 50%;
+}
+
+.host p {
+    margin: 0;
+    text-align: right;
+    color: var(--color-primary)
+}
+
+@media (max-width: 768px) {
+    .host p {
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .host .hostPicture {
+        width: 32px;
+        height: 32px;
+    }    
+}
+    
+
+@media (min-width: 769px) {
+    .host p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .host .hostPicture {
+        width: 64px;
+        height: 64px;
+    }
+}
