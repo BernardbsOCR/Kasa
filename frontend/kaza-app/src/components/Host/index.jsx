@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../../styles/Host.module.css'
 import background from '../../assets/host-background.svg'
 
-function AnnouncementHost({ name, picture }) {
+function Host({ name, picture }) {
   const userName = name.includes(' ') ? name.split(' ') : [name]
 
   return (
@@ -21,4 +21,4 @@ function AnnouncementHost({ name, picture }) {
   )
 }
 
-export default AnnouncementHost
+export default Host

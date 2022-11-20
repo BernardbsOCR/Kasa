@@ -1,10 +1,10 @@
 import React from 'react'
 import { useState } from 'react'
-import styles from '../../styles/Slideshow.module.css'
+import styles from '../../styles/Carrousel.module.css'
 import arrowBack from '../../assets/arrow-Back.svg'
 import arrowForward from '../../assets/arrow-Forward.svg'
 
-function Slideshow({ announcement }) {
+function Carrousel({ announcement }) {
   const [position, updatePosition] = useState(0)
   const pictures = announcement.pictures
   const image = pictures[position]
@@ -46,4 +46,4 @@ function Slideshow({ announcement }) {
   )
 }
 
-export default Slideshow
+export default Carrousel

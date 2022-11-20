@@ -1,13 +1,13 @@
 import React from 'react'
-import stylesDefault from '../../styles/Banner.module.css'
+import stylesDefault from '../../styles/Section.module.css'
 
-function Banner({ images, title = '', styles = stylesDefault }) {
+function Section({ images, title = '', styles = stylesDefault }) {
   return (
     <div className={styles.banner}>
       <picture>
         <source srcset={images.mobile.srcset} media={images.mobile.media} />
         <source srcset={images.desktop.srcset} media={images.desktop.media} />
-        <img src={images.desktop.srcset} alt="Banner-background" />
+        <img src={images.desktop.srcset} alt="Section-background" />
       </picture>
       <div className={styles.background}></div>
 
@@ -16,4 +16,4 @@ function Banner({ images, title = '', styles = stylesDefault }) {
   )
 }
 
-export default Banner
+export default Section

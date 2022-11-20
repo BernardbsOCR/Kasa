@@ -2,14 +2,14 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { getOne } from '../../api/KazaAPI'
-import styles from '../../styles/Announcement.module.css'
-import stylesCollaps from '../../styles/CollapseAnnouncement.module.css'
-import Slideshow from '../../components/Slideshow'
+import styles from '../../styles/FicheLogement.module.css'
+import stylesDropdown from '../../styles/FicheLogementDropdown.module.css'
+import Slideshow from '../../components/Carrousel'
 import Title from '../../components/Title'
 import Tags from '../../components/Tags'
 import Host from '../../components/Host'
 import Rate from '../../components/Rate'
-import Collapse from '../../components/Collapse'
+import Dropdown from '../../components/Dropdown'
 
 function FicheLogement({ updateNavLink }) {
   updateNavLink('FicheLogement')
@@ -52,18 +52,18 @@ function FicheLogement({ updateNavLink }) {
         </div>
       </div>
       <div className={styles.content}>
-        <Collapse
+        <Dropdown
           title={'Description'}
           description={announcement.description}
-          styles={stylesCollaps}
+          styles={stylesDropdown}
           open={true}
         />
-        <Collapse
+        <Dropdown
           title={'Équipements'}
           description={announcement.equipments.map((e) => (
             <p style={{ padding: 0 }}>{e}</p>
           ))}
-          styles={stylesCollaps}
+          styles={stylesDropdown}
           open={true}
         />
       </div>

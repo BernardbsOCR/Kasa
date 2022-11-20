@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import Banner from '../../components/Banner'
+import Section from '../../components/Section'
 import Gallery from '../../components/Gallery'
 import styles from '../../styles/Home.module.css'
 import { getAll } from '../../api/KazaAPI'
@@ -38,7 +38,7 @@ function Home({ updateNavLink }) {
   return (
     <div className={styles.home}>
       <div className={styles.banner}>
-        <Banner images={imagesBanner} title={titleBanner} />
+        <Section images={imagesBanner} title={titleBanner} />
       </div>
 
       {announcements !== null ? (

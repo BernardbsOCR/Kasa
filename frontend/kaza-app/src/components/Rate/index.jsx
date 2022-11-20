@@ -3,7 +3,7 @@ import styles from '../../styles/Rate.module.css'
 import starRed from '../../assets/star_rate-red.svg'
 import starGrey from '../../assets/star_rate-grey.svg'
 
-function AnnouncementRate({ rating, max }) {
+function Rate({ rating, max }) {
   const count = parseInt(rating)
   const stars = []
   for (let i = 0; i < max; i++) {
@@ -19,4 +19,4 @@ function AnnouncementRate({ rating, max }) {
   )
 }
 
-export default AnnouncementRate
+export default Rate
