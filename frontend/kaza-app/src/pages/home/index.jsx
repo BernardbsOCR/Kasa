@@ -1,8 +1,9 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import Section from '../../components/Section'
+import Section1 from '../../components/Section'
 import Gallery from '../../components/Gallery'
 import styles from '../../styles/Home.module.css'
+import { homeText } from '../../datas/text/KasaText'
 import { getAll } from '../../api/KazaAPI'
 import BackgroungDesktop from '../../assets/eric-muhr-P_XxsdVgtpQ-unsplash_descktop.jpg'
 import BackgroungMobile from '../../assets/eric-muhr-P_XxsdVgtpQ-unsplash_mobile.jpg'
@@ -18,7 +19,7 @@ const imagesBanner = {
   },
 }
 
-const titleBanner = 'Chez vous, partout et ailleurs'
+const titleBanner = homeText.sectionTitle
 
 function Home({ updateNavLink }) {
   updateNavLink('Home')
@@ -38,7 +39,7 @@ function Home({ updateNavLink }) {
   return (
     <div className={styles.home}>
       <div className={styles.banner}>
-        <Section images={imagesBanner} title={titleBanner} />
+        <Section1 images={imagesBanner} title={titleBanner} />
       </div>
 
       {announcements !== null ? (

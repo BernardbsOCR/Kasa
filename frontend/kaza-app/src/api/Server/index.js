@@ -1,4 +1,4 @@
-import annonces from '../../datas/annonces.json'
+import annonces from './annonces.json'
 
 const ServerAPI = {
   serverGetAll: function () {

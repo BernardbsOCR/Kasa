@@ -1,4 +1,4 @@
-const TextApropos = [
+const aProposText = [
   {
     title: 'Fiabilité',
     description:
@@ -21,4 +21,4 @@ const TextApropos = [
   },
 ]
 
-export default TextApropos
+export default aProposText

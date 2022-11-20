@@ -4,6 +4,7 @@ import { useParams, useNavigate } from 'react-router-dom'
 import { getOne } from '../../api/KazaAPI'
 import styles from '../../styles/FicheLogement.module.css'
 import stylesDropdown from '../../styles/FicheLogementDropdown.module.css'
+import { ficheLogementText } from '../../datas/text/KasaText'
 import Slideshow from '../../components/Carrousel'
 import Title from '../../components/Title'
 import Tags from '../../components/Tags'
@@ -53,13 +54,13 @@ function FicheLogement({ updateNavLink }) {
       </div>
       <div className={styles.content}>
         <Dropdown
-          title={'Description'}
+          title={ficheLogementText.description}
           description={announcement.description}
           styles={stylesDropdown}
           open={true}
         />
         <Dropdown
-          title={'Équipements'}
+          title={ficheLogementText.equipments}
           description={announcement.equipments.map((e) => (
             <p style={{ padding: 0 }}>{e}</p>
           ))}

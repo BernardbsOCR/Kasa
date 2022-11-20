@@ -1,9 +1,9 @@
 import React from 'react'
-import Banner from '../../components/Section'
+import Section2 from '../../components/Section'
 import styles from '../../styles/APropos.module.css'
 import stylesBanner from '../../styles/AProposSection.module.css'
-import Collapse from '../../components/Dropdown'
-import AProposText from '../../datas/text/AProposText'
+import Dropdown from '../../components/Dropdown'
+import aProposText from '../../datas/text/AProposText'
 import BackgroungDesktop from '../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash_desktop.jpg'
 import BackgroungMobile from '../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash_mobile.jpg'
 
@@ -24,11 +24,11 @@ function APropos({ updateNavLink }) {
   return (
     <div className={styles.aPropos}>
       <div className={styles.banner}>
-        <Banner images={imagesBanner} styles={stylesBanner} />
+        <Section2 images={imagesBanner} styles={stylesBanner} />
       </div>
       <section className={styles.section}>
-        {AProposText.map((data) => (
-          <Collapse title={data.title} description={data.description} />
+        {aProposText.map((data) => (
+          <Dropdown title={data.title} description={data.description} />
         ))}
       </section>
     </div>
