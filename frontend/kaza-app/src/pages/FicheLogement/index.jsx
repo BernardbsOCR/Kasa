@@ -61,9 +61,7 @@ function FicheLogement({ updateActiveLink }) {
         />
         <Collapse
           title={ficheLogementText.equipments}
-          description={announcement.equipments.map((e) => (
-            <p className={stylesCollapse}>{e}</p>
-          ))}
+          description={announcement.equipments}
           styles={stylesCollapse}
           open={true}
         />

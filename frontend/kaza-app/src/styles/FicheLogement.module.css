@@ -27,9 +27,10 @@
 
 .announcement .content {
     display: flex;
-    flex-direction: column;
+    height: 100%;
+    align-items: stretch;
     column-gap: 76px;
-    margin-top: 15px;    
+    margin-top: 15px;  
 }
 
 @media (max-width: 768px) {
@@ -53,6 +54,8 @@
 
     .announcement .content {   
         flex-direction: column;
+        height: 100%;
+        align-items: center;
         row-gap: 20px;
         column-gap: 76px;
         margin-top: 15px;
@@ -77,9 +80,8 @@
     }
 
     .announcement .content {  
-        flex-direction: row;  
+        flex-direction: row; 
         column-gap: 76px;
         margin-top: 15px;
-        height: 100px;
     }
 }

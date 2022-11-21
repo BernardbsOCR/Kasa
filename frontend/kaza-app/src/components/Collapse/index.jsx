@@ -18,9 +18,19 @@ function Collapse({
         <h2>{title}</h2>
         <img src={isOpen ? dropdownOpen : dropdownClose} alt="dropdown.svg" />
       </div>
-      {isOpen && <p className={styles.content}>{description}</p>}
+      {isOpen && (
+        <div className={styles.content}>{getDescrpition(description)}</div>
+      )}
     </div>
   )
+
+  function getDescrpition(description) {
+    return Array.isArray(description) ? (
+      description.map((e) => <p>{e}</p>)
+    ) : (
+      <p>{description}</p>
+    )
+  }
 }
 
 export default Collapse
