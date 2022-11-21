@@ -1,5 +1,5 @@
 export const homeText = {
-  sectionTitle: 'Chez vous,',
+  sectionTitle: 'Chez vous, partout et ailleurs',
 }
 
 export const ficheLogementText = {

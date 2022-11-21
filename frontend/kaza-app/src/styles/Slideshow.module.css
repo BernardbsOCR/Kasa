@@ -31,6 +31,15 @@
     border-radius: 25px;
 }
 
+.count {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    line-height: 25px;
+    position: absolute;
+    top: calc(100% - 60px);
+}
+
 @media (max-width: 768px) {
     .slideshow {
         height: 255px; 

@@ -25,10 +25,11 @@
     align-items:flex-end;
 }
 
-.announcement .content {    
+.announcement .content {
     display: flex;
+    flex-direction: column;
     column-gap: 76px;
-    margin-top: 15px;
+    margin-top: 15px;    
 }
 
 @media (max-width: 768px) {
@@ -79,5 +80,6 @@
         flex-direction: row;  
         column-gap: 76px;
         margin-top: 15px;
+        height: 100px;
     }
 }

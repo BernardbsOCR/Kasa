@@ -3,14 +3,14 @@ import styles from '../../styles/Header.module.css'
 import Logo from '../../assets/logo_kaza.svg'
 import Nav from '../../components/Nav'
 
-function Header({ navLink }) {
+function Header({ activeLink }) {
   return (
     <header className={styles}>
       <picture>
         <img src={Logo} alt="kaza-logo" />
       </picture>
       <nav>
-        <Nav navLink={navLink} />
+        <Nav activeLink={activeLink} />
       </nav>
     </header>
   )

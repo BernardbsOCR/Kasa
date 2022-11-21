@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import Section1 from '../../components/Section'
+import Banner from '../../components/Banner'
 import Gallery from '../../components/Gallery'
 import styles from '../../styles/Home.module.css'
 import { homeText } from '../../datas/text/KasaText'
@@ -21,8 +21,8 @@ const imagesBanner = {
 
 const titleBanner = homeText.sectionTitle
 
-function Home({ updateNavLink }) {
-  updateNavLink('Home')
+function Home({ updateActiveLink }) {
+  updateActiveLink('Home')
 
   const [announcements, updateAnnouncement] = useState(null)
 
@@ -39,7 +39,7 @@ function Home({ updateNavLink }) {
   return (
     <div className={styles.home}>
       <div className={styles.banner}>
-        <Section1 images={imagesBanner} title={titleBanner} />
+        <Banner images={imagesBanner} title={titleBanner} />
       </div>
 
       {announcements !== null ? (

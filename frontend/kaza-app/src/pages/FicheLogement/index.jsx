@@ -3,17 +3,17 @@ import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { getOne } from '../../api/KazaAPI'
 import styles from '../../styles/FicheLogement.module.css'
-import stylesDropdown from '../../styles/FicheLogementDropdown.module.css'
+import stylesCollapse from '../../styles/FicheLogementCollapse.module.css'
 import { ficheLogementText } from '../../datas/text/KasaText'
-import Slideshow from '../../components/Carrousel'
+import Slideshow from '../../components/Slideshow'
 import Title from '../../components/Title'
 import Tags from '../../components/Tags'
 import Host from '../../components/Host'
 import Rate from '../../components/Rate'
-import Dropdown from '../../components/Dropdown'
+import Collapse from '../../components/Collapse'
 
-function FicheLogement({ updateNavLink }) {
-  updateNavLink('FicheLogement')
+function FicheLogement({ updateActiveLink }) {
+  updateActiveLink('FicheLogement')
 
   const { id } = useParams()
 
@@ -33,7 +33,7 @@ function FicheLogement({ updateNavLink }) {
       .catch((error) => {
         console.log({ error })
       })
-  }, [id, navigate])
+  }, [navigate, id])
 
   return announcement !== null ? (
     <div className={styles.announcement}>
@@ -53,18 +53,18 @@ function FicheLogement({ updateNavLink }) {
         </div>
       </div>
       <div className={styles.content}>
-        <Dropdown
+        <Collapse
           title={ficheLogementText.description}
           description={announcement.description}
-          styles={stylesDropdown}
+          styles={stylesCollapse}
           open={true}
         />
-        <Dropdown
+        <Collapse
           title={ficheLogementText.equipments}
           description={announcement.equipments.map((e) => (
-            <p style={{ padding: 0 }}>{e}</p>
+            <p className={stylesCollapse}>{e}</p>
           ))}
-          styles={stylesDropdown}
+          styles={stylesCollapse}
           open={true}
         />
       </div>

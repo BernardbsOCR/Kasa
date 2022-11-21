@@ -1,22 +1,22 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styles from '../../styles/Nav.module.css'
-import navText from '../../datas/text/AProposText'
+import { navText } from '../../datas/text/KasaText'
 
-function Nav({ currentLink }) {
+function Nav({ activeLink }) {
   return (
     <nav>
       <Link
         to="/"
         className={styles.navLink}
-        style={getTextDecoration(currentLink, 'Home')}
+        style={getTextDecoration(activeLink, 'Home')}
       >
         {navText.home}
       </Link>
       <Link
         to="/a-propos"
         className={styles.navLink}
-        style={getTextDecoration(currentLink, 'APropos')}
+        style={getTextDecoration(activeLink, 'APropos')}
       >
         {navText.about}
       </Link>
@@ -24,8 +24,8 @@ function Nav({ currentLink }) {
   )
 }
 
-function getTextDecoration(currentLink, linkName) {
-  const underline = currentLink === linkName ? 'underline' : 'none'
+function getTextDecoration(activeLink, linkName) {
+  const underline = activeLink === linkName ? 'underline' : 'none'
   return {
     textDecoration: `${underline}`,
   }

@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import styles from '../../styles/Error404.module.css'
 
-function Error404({ updateNavLink }) {
-  updateNavLink('Error404')
+function Error404({ updateActiveLink }) {
+  updateActiveLink('Error404')
 
   return (
     <section className={styles.error404}>

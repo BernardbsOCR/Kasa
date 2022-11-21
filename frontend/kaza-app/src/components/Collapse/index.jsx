@@ -1,10 +1,10 @@
 import React from 'react'
 import { useState } from 'react'
-import defaultStyles from '../../styles/Dropdown.module.css'
+import defaultStyles from '../../styles/Collapse.module.css'
 import dropdownClose from '../../assets/dropdown-close.svg'
 import dropdownOpen from '../../assets/dropdown-open.svg'
 
-function Dropdown({
+function Collapse({
   title,
   description,
   styles = defaultStyles,
@@ -18,9 +18,9 @@ function Dropdown({
         <h2>{title}</h2>
         <img src={isOpen ? dropdownOpen : dropdownClose} alt="dropdown.svg" />
       </div>
-      {isOpen && <p>{description}</p>}
+      {isOpen && <p className={styles.content}>{description}</p>}
     </div>
   )
 }
 
-export default Dropdown
+export default Collapse
