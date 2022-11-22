@@ -16,7 +16,10 @@ function Collapse({
     <div className={styles.collapse}>
       <div className={styles.titleLayout} onClick={() => updateIsOpen(!isOpen)}>
         <h2>{title}</h2>
-        <img src={isOpen ? dropdownOpen : dropdownClose} alt="dropdown.svg" />
+        <img
+          src={isOpen ? dropdownOpen : dropdownClose}
+          alt={isOpen ? 'dropdown-open.svg' : 'dropdown-close.svg'}
+        />
       </div>
       {isOpen && (
         <div className={styles.content}>{getDescripition(description)}</div>

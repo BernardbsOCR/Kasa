@@ -4,7 +4,7 @@ import { useParams, useNavigate } from 'react-router-dom'
 import { getOne } from '../../api/KazaAPI'
 import styles from '../../styles/FicheLogement.module.css'
 import stylesCollapse from '../../styles/FicheLogementCollapse.module.css'
-import { ficheLogementText } from '../../utils/text/KasaText'
+import { ficheLogementText, linkText } from '../../utils/text/KasaText'
 import Slideshow from '../../components/Slideshow'
 import Title from '../../components/Title'
 import Tags from '../../components/Tags'
@@ -13,7 +13,7 @@ import Rate from '../../components/Rate'
 import Collapse from '../../components/Collapse'
 
 function FicheLogement({ updateActiveLink }) {
-  updateActiveLink('FicheLogement')
+  updateActiveLink(linkText.announcement)
 
   const { id } = useParams()
 

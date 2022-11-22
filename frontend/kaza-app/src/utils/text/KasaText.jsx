@@ -7,9 +7,11 @@ export const ficheLogementText = {
   equipments: 'Équipements',
 }
 
-export const navText = {
+export const linkText = {
   home: 'Accueil',
   about: 'A Propos',
+  announcement: 'Fiche Logement',
+  error404: '404',
 }
 
 export const error404Text = {

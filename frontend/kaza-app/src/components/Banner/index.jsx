@@ -1,13 +1,18 @@
 import React from 'react'
 import stylesDefault from '../../styles/Banner.module.css'
 
-function Banner({ images, title = '', styles = stylesDefault }) {
+function Banner({ sources, title = '', styles = stylesDefault }) {
   return (
     <div className={styles.banner}>
       <picture>
-        <source srcset={images.mobile.srcset} media={images.mobile.media} />
-        <source srcset={images.desktop.srcset} media={images.desktop.media} />
-        <img src={images.desktop.srcset} alt="Banner-background" />
+        {sources.map((src, index) => (
+          <source
+            key={`Banner-media-${index}`}
+            srcset={src.srcset}
+            media={src.media}
+          />
+        ))}
+        <img src={sources[0].srcset} alt="Banner-background" />
       </picture>
       <div className={styles.background}></div>
 

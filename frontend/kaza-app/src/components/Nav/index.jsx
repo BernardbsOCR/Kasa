@@ -1,25 +1,25 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styles from '../../styles/Nav.module.css'
-import { navText } from '../../utils/text/KasaText'
+import { linkText } from '../../utils/text/KasaText'
 
 function Nav({ activeLink }) {
+  const links = [
+    { to: '/', linkName: linkText.home },
+    { to: '/a-propos', linkName: linkText.about },
+  ]
+
   return (
     <nav>
-      <Link
-        to="/"
-        className={styles.navLink}
-        style={getTextDecoration(activeLink, 'Home')}
-      >
-        {navText.home}
-      </Link>
-      <Link
-        to="/a-propos"
-        className={styles.navLink}
-        style={getTextDecoration(activeLink, 'APropos')}
-      >
-        {navText.about}
-      </Link>
+      {links.map((link) => (
+        <Link
+          to={link.to}
+          className={styles.navLink}
+          style={getTextDecoration(activeLink, link.linkName)}
+        >
+          {link.linkName}
+        </Link>
+      ))}
     </nav>
   )
 }
