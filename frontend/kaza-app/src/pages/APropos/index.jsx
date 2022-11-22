@@ -1,41 +1,29 @@
 import React from 'react'
-import Banner from '../../components/Banner'
+import Banner from '../../components/BannerAPropos'
 import styles from '../../styles/APropos.module.css'
-import bannerStyles from '../../styles/AProposBanner.module.css'
-import Collapse from '../../components/Collapse'
+import Dropdown from '../../components/Dropdown'
 import { linkText, aProposText } from '../../utils/KasaText'
-import BackgroungDesktop from '../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash_desktop.jpg'
-import BackgroungMobile from '../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash_mobile.jpg'
-
-const bannerSources = [
-  {
-    srcset: BackgroungDesktop,
-    media: '(min-width: 769px)',
-  },
-  {
-    srcset: BackgroungMobile,
-    media: '(max-width: 768px)',
-  },
-]
+import stylesDropdown from '../../styles/DropdownAPropos.module.css'
 
 function APropos({ updateActiveLink }) {
   updateActiveLink(linkText.about)
 
   return (
-    <div className={styles.aPropos}>
+    <main className={styles.main}>
       <div className={styles.banner}>
-        <Banner sources={bannerSources} styles={bannerStyles} />
+        <Banner />
       </div>
       <section className={styles.section}>
-        {aProposText.map((data, index) => (
-          <Collapse
+        {aProposText.map((data) => (
+          <Dropdown
             key={data.title}
             title={data.title}
             description={data.description}
+            styles={stylesDropdown}
           />
         ))}
       </section>
-    </div>
+    </main>
   )
 }
 

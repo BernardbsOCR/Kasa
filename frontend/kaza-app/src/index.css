@@ -21,7 +21,7 @@ body {
 #root {
   display: flex;
   flex-direction: column;
-  max-width: 1320px;
+  max-width: 1440px;
   min-width: 375px;
   margin: 0 auto 0 auto;
 }
@@ -37,6 +37,9 @@ code {
 
   --color-primary: #FF6060;
   color: white;
+
+  --footer-height: 200px;
+  --text-thumb: 18px;
 }
 
 h1, h2, h3, p {
@@ -46,14 +49,32 @@ h1, h2, h3, p {
 
 @media (max-width: 768px) {
   * {
-    --page-min-height: calc(100vh - 336px);
+    --header-height: 47px;
+
     --page-margin: 20px;
+    --page-margin-height: 20px;    
+    --page-min-height: calc(100vh - (var(--footer-height) + var(--header-height) + (2 * var(--page-margin-height))));
+
+    --text-x-large: 24px;
+    --text-large: 18px;
+    --text-medium: 12px;
+    --text-normal: 12px;
+    --text-small: 10px;
   }
 }
 
 @media (min-width: 769px) {
-  * {
-    --page-min-height: calc(100vh - 387px);
-    --page-margin: 40px;
+  * {  
+    --header-height: 68px;
+
+    --page-margin: 100px;
+    --page-margin-height: 40px;   
+    --page-min-height: calc(100vh - (var(--footer-height) + var(--header-height) + (2 * var(--page-margin-height))));   
+
+    --text-x-large: 48px;
+    --text-large: 36px;
+    --text-medium: 24px;
+    --text-normal: 18px;
+    --text-small: 14px;
   }
 }

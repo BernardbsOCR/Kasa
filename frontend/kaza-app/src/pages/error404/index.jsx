@@ -7,13 +7,13 @@ function Error404({ updateActiveLink }) {
   updateActiveLink(linkText.error404)
 
   return (
-    <div className={styles.error404}>
+    <main className={styles.main}>
       <h1>404</h1>
       <p>{error404Text.title}</p>
       <Link to="/" className={styles.link}>
         {error404Text.link}
       </Link>
-    </div>
+    </main>
   )
 }
 

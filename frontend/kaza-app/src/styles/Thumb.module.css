@@ -1,6 +1,5 @@
 .thumb {
     --border-radius: 10px;
-
     position: relative;    
     border-radius: var(--border-radius);
 }
@@ -29,12 +28,12 @@
     height: 100%;
     object-fit: cover;    
     overflow: hidden;
-    background: #FF6060;    
+    background: var(--color-primary);    
     border-radius: var(--border-radius);
 }
 
-.thumb .title {    
-    font-size: 18px; 
+.thumb .title {   
+    font-size: var(--text-thumb); 
     overflow: hidden;
     text-overflow: ellipsis;    
     display: -webkit-box;
@@ -46,12 +45,11 @@
 @media (max-width: 768px) {
     .thumb {
         width: auto;
-        height: auto;
+        height: 100%;
         min-height: 255px;
     }
 
     .thumb .rectangle {
-        height: 99%;
         min-height: 255px;
     }
 
@@ -64,9 +62,5 @@
     .thumb {
         width: 340px;
         height: 340px;
-    }
-
-    .thumb .rectangle {
-        height: 100%;
     }
 }

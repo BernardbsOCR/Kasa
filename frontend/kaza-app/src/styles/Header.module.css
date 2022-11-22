@@ -1,31 +1,31 @@
-header {
+.header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-header picture {
+.header picture {
     width: fit-content;
 }
 
 @media (max-width: 768px) {
-    header {
-        margin: 20px 20px 0 20px;
+    .header {
+        margin: var(--page-margin-height) var(--page-margin) 0 var(--page-margin);
+        height: var(--header-height);
     }
 
-    header img {
-        width: 145px;
-        height: 47px;
+    .header img {
+        height: var(--header-height);
     }
 }
 
 @media (min-width: 769px) {
-    header {
-        margin: 40px 40px 0 40px;
+    .header {
+        margin: var(--page-margin-height) var(--page-margin) 0 var(--page-margin);
+        height: var(--header-height);
     }
 
-    header img {
-        width: 210.32px;
-        height: 68px;
+    .header img {
+        height: var(--header-height);
     }
 }

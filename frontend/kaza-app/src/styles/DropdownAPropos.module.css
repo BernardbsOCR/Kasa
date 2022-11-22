@@ -1,95 +1,92 @@
-.collapse {
+.dropdown {
     width: 100%;
     height: 100%;
     margin: 0; 
     padding: 0;
 }
 
-.titleLayout {
+.dropdown .title {
     display: flex;    
     justify-content:space-between ;
     align-items: center;
-    height: 47px;
     background: var(--color-primary);
     border-radius: 5px;
     padding: 5px 18px;
 }
 
-.titleLayout:hover {
+.dropdown .title:hover {
     cursor: pointer;
 }
 
-.collapse h2 {    
+.dropdown h2 {    
     margin: 0; 
 }
 
-.collapse img {
+.dropdown img {
     padding: 0;
     margin: 0; 
     width: 26px;
     height: 26px;
 }
 
-.collapse .content {   
+.dropdown .content {   
     padding: 30px 20px;
     margin: 0; 
     height: 100%;    
     background: #F7F7F7;
-    font-size: 24px; 
     color: var(--color-primary);
     font-weight: 400;
     border-radius: 5px;
 }
 
-.collapse .content p { 
+.dropdown .content p { 
     padding: 0;
     margin: 0;     
     color: var(--color-primary);
     font-weight: 400;
-    font-size: 24px; 
 }
 
 @media (max-width: 768px) {
-    .titleLayout {
+    .dropdown .title {
         height: 30px;
     }
 
-    .collapse h2 {   
-        font-size: 13px;
+    .dropdown h2 {   
+        font-size: calc(var(--text-medium) + 1px);
     }
 
-    .collapse img {
+    .dropdown img {
         width: 16px;
         height: 16px;
     }
 
-    .collapse .content {  
+    .dropdown .content {  
         padding: 25px 5px 50px 10px;        
     }
 
-    .collapse .content p { 
-        font-size: 12px;
+    .dropdown .content p { 
+        font-size: var(--text-medium);
     }
 }
 
 @media (min-width: 769px) {
-    .collapse img {
-        width: 26px;
-    }
-
-    .titleLayout {
+    .dropdown .title {
         height: 50px;
     }
 
-    .collapse h2 {   
-        font-size: 24px;
+    .dropdown img {
+        width: 26px;
     }
 
-    .collapse .content {  
+    .dropdown h2 {   
+        font-size: var(--text-medium);
+    }
+
+    .dropdown .content {  
         padding: 30px 20px;        
     }
 
-    .collapse .content p { 
-        font-size: 24px;
+    .dropdown .content p { 
+        font-size: var(--text-medium);
     }
 }

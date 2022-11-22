@@ -4,7 +4,7 @@ import Logo from '../../assets/logo_kaza_white.svg'
 
 function Footer() {
   return (
-    <footer className={styles}>
+    <footer className={styles.footer}>
       <picture>
         <img src={Logo} alt="kaza-logo" />
       </picture>

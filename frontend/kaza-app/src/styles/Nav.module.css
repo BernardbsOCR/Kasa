@@ -16,7 +16,7 @@ header .navLink {
 @media (max-width: 768px) {
     .navLink {
         text-transform: uppercase;
-        font-size: 12px;
+        font-size: var(--text-medium);
     }
 
     .navLink:nth-child(2) {
@@ -27,7 +27,7 @@ header .navLink {
 @media (min-width: 769px) {
     .navLink {
         text-transform: none;
-        font-size: 24px;
+        font-size: var(--text-medium);
     }
     
     .navLink:nth-child(2) {

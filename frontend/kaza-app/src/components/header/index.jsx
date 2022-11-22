@@ -5,7 +5,7 @@ import Nav from '../../components/Nav'
 
 function Header({ activeLink }) {
   return (
-    <header className={styles}>
+    <header className={styles.header}>
       <picture>
         <img src={Logo} alt="kaza-logo" />
       </picture>

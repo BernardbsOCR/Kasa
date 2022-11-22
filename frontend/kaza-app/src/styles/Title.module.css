@@ -15,20 +15,20 @@
 
 @media (max-width: 768px) {
     .title h2 {
-        font-size: 18px;
+        font-size: var(--text-large);
     }
 
     .title p {
-        font-size: 14px;
+        font-size: calc(var(--text-normal) + 2px);
     }
 }
 
 @media (min-width: 769px) {
     .title h2 {
-        font-size: 36px;
+        font-size: var(--text-large);
     }
 
     .title p {
-        font-size: 18px;
+        font-size: var(--text-normal);
     }
 }
