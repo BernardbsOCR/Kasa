@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styles from '../../styles/Nav.module.css'
-import { linkText } from '../../utils/text/KasaText'
+import { linkText } from '../../utils/KasaText'
 
 function Nav({ activeLink }) {
   const links = [

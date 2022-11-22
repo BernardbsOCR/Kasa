@@ -1,4 +1,25 @@
-const aProposText = [
+export const linkText = {
+  home: 'Accueil',
+  about: 'A Propos',
+  announcement: 'Fiche Logement',
+  error404: '404',
+}
+
+export const homeText = {
+  sectionTitle: 'Chez vous, partout et ailleurs',
+}
+
+export const ficheLogementText = {
+  description: 'Description',
+  equipments: 'Équipements',
+}
+
+export const error404Text = {
+  title: "Oups! La page que vous demandez n'existe pas.",
+  link: 'Retourner sur la page d’accueil',
+}
+
+export const aProposText = [
   {
     title: 'Fiabilité',
     description:
@@ -20,5 +41,3 @@ const aProposText = [
       "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.",
   },
 ]
-
-export default aProposText
