@@ -18,7 +18,6 @@
 @media (max-width: 768px) {
     .host p {
         font-size: 12px;
-        line-height: 17px;
     }
 
     .host .hostPicture {
@@ -31,7 +30,6 @@
 @media (min-width: 769px) {
     .host p {
         font-size: 18px;
-        line-height: 26px;
     }
 
     .host .hostPicture {

@@ -3,7 +3,7 @@ import Banner from '../../components/Banner'
 import styles from '../../styles/APropos.module.css'
 import stylesBanner from '../../styles/AProposBanner.module.css'
 import Collapse from '../../components/Collapse'
-import aProposText from '../../datas/text/AProposText'
+import aProposText from '../../utils/text/AProposText'
 import BackgroungDesktop from '../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash_desktop.jpg'
 import BackgroungMobile from '../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash_mobile.jpg'
 

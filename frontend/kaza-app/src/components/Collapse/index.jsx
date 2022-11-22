@@ -19,12 +19,12 @@ function Collapse({
         <img src={isOpen ? dropdownOpen : dropdownClose} alt="dropdown.svg" />
       </div>
       {isOpen && (
-        <div className={styles.content}>{getDescrpition(description)}</div>
+        <div className={styles.content}>{getDescripition(description)}</div>
       )}
     </div>
   )
 
-  function getDescrpition(description) {
+  function getDescripition(description) {
     return Array.isArray(description) ? (
       description.map((e) => <p>{e}</p>)
     ) : (

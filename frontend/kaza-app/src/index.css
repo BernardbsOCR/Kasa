@@ -34,25 +34,26 @@ code {
 * {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
+
   --color-primary: #FF6060;
   color: white;
 }
 
-h1, h2, p {
+h1, h2, h3, p {
   font-weight: 500;
+  line-height: 142.6%;
 }
 
 @media (max-width: 768px) {
   * {
-    --page-min-height: calc(100vh - 334px);
+    --page-min-height: calc(100vh - 336px);
     --page-margin: 20px;
   }
 }
 
 @media (min-width: 769px) {
   * {
-    --page-min-height: calc(100vh - 386px);
+    --page-min-height: calc(100vh - 387px);
     --page-margin: 40px;
   }
 }
