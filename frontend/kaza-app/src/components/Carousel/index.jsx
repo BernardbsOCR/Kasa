@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import styles from '../../styles/Carousel.module.css'
+import styles from './Carousel.module.css'
 import arrowBack from '../../assets/arrow-Back.svg'
 import arrowForward from '../../assets/arrow-Forward.svg'
 

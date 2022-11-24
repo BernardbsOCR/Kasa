@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import styles from '../../styles/Nav.module.css'
+import styles from './Nav.module.css'
 import { linkText } from '../../utils/KasaText'
 
 function Nav({ activeLink }) {

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { error404Text, linkText } from '../../utils/KasaText'
-import styles from '../../styles/Error404.module.css'
+import styles from './Error404.module.css'
 
 function Error404({ updateActiveLink }) {
   updateActiveLink(linkText.error404)

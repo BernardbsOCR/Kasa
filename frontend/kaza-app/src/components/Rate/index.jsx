@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../styles/Rate.module.css'
+import styles from './Rate.module.css'
 import starRed from '../../assets/star_rate-red.svg'
 import starGrey from '../../assets/star_rate-grey.svg'
 

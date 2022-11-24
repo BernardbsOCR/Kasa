@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../styles/Title.module.css'
+import styles from './Title.module.css'
 
 function AnnouncementTitle({ title, location }) {
   return (

@@ -1,9 +1,9 @@
 import React from 'react'
 import Banner from '../../components/BannerAPropos'
-import styles from '../../styles/APropos.module.css'
 import Dropdown from '../../components/Dropdown'
 import { linkText, aProposText } from '../../utils/KasaText'
-import stylesDropdown from '../../styles/DropdownAPropos.module.css'
+import styles from './APropos.module.css'
+import stylesDropdown from './DropdownAPropos.module.css'
 
 function APropos({ updateActiveLink }) {
   updateActiveLink(linkText.about)

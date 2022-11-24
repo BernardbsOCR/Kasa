@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import Banner from '../../components/BannerHome'
 import Gallery from '../../components/Gallery'
-import styles from '../../styles/Home.module.css'
+import styles from './Home.module.css'
 import { homeText, linkText } from '../../utils/KasaText'
 import { getAll } from '../../api/KazaAPI'
 

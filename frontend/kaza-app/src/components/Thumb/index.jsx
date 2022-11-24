@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import styles from '../../styles/Thumb.module.css'
+import styles from './Thumb.module.css'
 
 function Thumb({ id, title, cover }) {
   const link = `/fiche-logement/${id}`

@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../styles/Host.module.css'
+import styles from './Host.module.css'
 import background from '../../assets/host-background.svg'
 
 function Host({ name, picture }) {

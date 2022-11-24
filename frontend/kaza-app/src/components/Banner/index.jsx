@@ -1,5 +1,5 @@
 import React from 'react'
-import stylesDefault from '../../styles/Banner.module.css'
+import stylesDefault from './Banner.module.css'
 
 function Banner({ sources, title = '', styles = stylesDefault }) {
   return (

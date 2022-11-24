@@ -1,6 +1,6 @@
 import React from 'react'
 import Thumb from '../Thumb'
-import styles from '../../styles/Gallery.module.css'
+import styles from './Gallery.module.css'
 
 function Gallery({ announcements }) {
   return (

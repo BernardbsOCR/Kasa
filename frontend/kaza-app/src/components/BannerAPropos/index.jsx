@@ -1,6 +1,6 @@
 import React from 'react'
 import Banner from '../Banner'
-import styles from '../../styles/BannerAPropos.module.css'
+import styles from './BannerAPropos.module.css'
 import BackgroungDesktop from '../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash_desktop.jpg'
 import BackgroungMobile from '../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash_mobile.jpg'
 
