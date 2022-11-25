@@ -65,7 +65,7 @@
 }
 
 @media (min-width: 769px) {
-    .carousel .carousel {
+    .carousel {
         height: 415px;
         margin-top: 25px; 
         border-radius: 25px;
